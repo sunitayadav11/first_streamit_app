@@ -33,7 +33,9 @@ streamlit.text(fruityice_response)
 #New Section to display fruityvice API response
 streamlit.header('FruityVice Fruit Advice')
 fruityice_response = requests.get("https://fruityvice.com/api/fruit/watermelon")
-streamlit.text(fruityice_response.json())
+#streamlit.text(fruityice_response.json())
 
 
+Fruityvice_normalised=pandas.json_normalised(fruityice_response.json())
+streamlit.dataframe(Fruityvice_normalised)
 
