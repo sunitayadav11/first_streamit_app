@@ -1,4 +1,4 @@
-section to display fruityviseimport pandas
+import pandas
 import streamlit
 import requests
 
