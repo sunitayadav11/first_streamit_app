@@ -47,7 +47,7 @@ streamlit.write('User enter',fruit_choice)
 fruityice_response = requests.get("https://fruityvice.com/api/fruit/"+fruit_choice)
 
 
-#snowflake-connector-python
+snowflake-connector-python
 my_cnx = snowflake.connector.connect(**streamlit.secrets["snowflake"])
 my_cur = my_cnx.cursor()
 my_cur.execute("SELECT CURRENT_USER(), CURRENT_ACCOUNT(), CURRENT_REGION()")
